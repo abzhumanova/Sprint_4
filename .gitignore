@@ -1,0 +1,37 @@
+# IntelliJ IDEA
+.idea/
+
+# Maven
+target/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.swp
+
+# Java-специфичные
+*.class
+
+# WebDriver
+WebDriver/
+
+# Исключения для src
+!src/
+!src/**/*
+
+# Сохраняем важные файлы
+!pom.xml
+!README.md
+
+# Дополнительные исключения для вашего проекта
+WebDriver/
