@@ -1,4 +1,4 @@
-package PageObjects;
+package ru.praktikum.scooter.pageobjects; // Исправлено на корректный пакет
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,6 +12,7 @@ import java.time.Duration;
 public class RentPage {
     private final WebDriver driver;
 
+    // Локаторы
     private final By rentalDateField = By.xpath("//input[@placeholder='* Когда привезти самокат']");
     private final By rentalTimeField = By.className("Dropdown-placeholder");
     private final By rentalTime = By.xpath("//div[@class='Dropdown-option' and text()='сутки']");

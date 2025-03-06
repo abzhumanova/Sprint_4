@@ -1,13 +1,12 @@
 import org.junit.Test;
-import PageObjects.MainPage;
-import PageObjects.OrderPage;
-import PageObjects.RentPage;
+import ru.praktikum.scooter.pageobjects.MainPage;  // Исправлено на корректный импорт
+import ru.praktikum.scooter.pageobjects.OrderPage; // Исправлено на корректный импорт
+import ru.praktikum.scooter.pageobjects.RentPage;   // Исправлено на корректный импорт
 import static org.junit.Assert.assertTrue;
 
 public class SamokatOrderingTest extends CommonBaseTest {
 
     // Тест заказа через кнопку в шапке сервиса
-
     @Test
     public void samokatOrderingByHeaderOrderButton() {
         new MainPage(driver)
@@ -38,7 +37,6 @@ public class SamokatOrderingTest extends CommonBaseTest {
     }
 
     // Тест заказа через кнопку в середине страницы сервиса
-
     @Test
     public void samokatOrderingByMiddleOrderButton() {
         new MainPage(driver)

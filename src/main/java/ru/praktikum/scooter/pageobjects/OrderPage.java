@@ -1,4 +1,4 @@
-package PageObjects;
+package ru.praktikum.scooter.pageobjects; // Исправлено на корректный пакет
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -12,6 +12,7 @@ import java.time.Duration;
 public class OrderPage {
     private final WebDriver driver;
 
+    // Локаторы
     private final By clientFirstName = By.xpath("//input[@placeholder='* Имя']");
     private final By clientLastName = By.xpath("//input[@placeholder='* Фамилия']");
     private final By deliveryAddress = By.xpath("//input[@placeholder='* Адрес: куда привезти заказ']");

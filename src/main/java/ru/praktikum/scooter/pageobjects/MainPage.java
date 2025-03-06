@@ -1,4 +1,4 @@
-package PageObjects;
+package ru.praktikum.scooter.pageobjects; // Исправлено на корректный пакет
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,18 +12,21 @@ import java.time.Duration;
 public class MainPage {
     private final WebDriver driver;
 
+    // Константа для URL
+    private static final String BASE_URL = "https://qa-scooter.praktikum-services.ru/";
+
     // Локаторы
     private final By cookieButton = By.id("rcc-confirm-button");
     private final By headerOrderButton = By.xpath("//button[contains(@class, 'Button_Button__ra12g') and text()='Заказать']");
     private final By middleOrderButton = By.xpath("//button[contains(@class,'Button_Button__ra12g Button_UltraBig__UU3Lp') and text()='Заказать']");
 
     // Вопросы и ответы в разделе «Вопросы о важном»
-    private static final String[] QUESTIONS_ID = {
+    private final String[] QUESTIONS_ID = {
             "accordion__heading-0", "accordion__heading-1", "accordion__heading-2",
             "accordion__heading-3", "accordion__heading-4", "accordion__heading-5",
             "accordion__heading-6", "accordion__heading-7"
     };
-    private static final String[] ANSWERS_ID = {
+    private final String[] ANSWERS_ID = {
             "accordion__panel-0", "accordion__panel-1", "accordion__panel-2",
             "accordion__panel-3", "accordion__panel-4", "accordion__panel-5",
             "accordion__panel-6", "accordion__panel-7"
@@ -34,7 +37,7 @@ public class MainPage {
     }
 
     public MainPage openSite() {
-        driver.get("https://qa-scooter.praktikum-services.ru/");
+        driver.get(BASE_URL); // Используем константу BASE_URL
         return this;
     }
 
