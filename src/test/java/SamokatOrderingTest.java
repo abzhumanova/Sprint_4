@@ -1,7 +1,7 @@
 import org.junit.Test;
-import ru.praktikum.scooter.pageobjects.MainPage;  // Исправлено на корректный импорт
-import ru.praktikum.scooter.pageobjects.OrderPage; // Исправлено на корректный импорт
-import ru.praktikum.scooter.pageobjects.RentPage;   // Исправлено на корректный импорт
+import ru.praktikum.scooter.pageobjects.MainPage;
+import ru.praktikum.scooter.pageobjects.OrderPage;
+import ru.praktikum.scooter.pageobjects.RentPage;
 import static org.junit.Assert.assertTrue;
 
 public class SamokatOrderingTest extends CommonBaseTest {
